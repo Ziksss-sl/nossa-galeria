@@ -11,7 +11,7 @@
   <!-- Tela de bloqueio -->
   <div class="lock-screen" id="lockScreen">
     <div class="lock-box">
-      <div class="hint">data onde o nosso amor começou! ❤️💍(exemplo: **/**/**)</div>
+      <div class="hint">data onde o nosso amor começou! ❤️💍</div>
       <input type="password" id="passwordInput" placeholder="Digite a senha" />
     </div>
   </div>
@@ -19,7 +19,7 @@
   <!-- Conteúdo do site (inicialmente oculto) -->
   <div id="mainContent" style="display: none;">
     <header>
-      <h1>Nosso Amor em Destaque</h1>
+      <h1>NOSSA VIDA ❤️</h1>
     </header>
 
     <main class="content">
@@ -105,7 +105,7 @@
     </main>
 
     <footer>
-      Feito com amor por você.
+      V+B ❤️💍 (@zvinicioszs2 + @kvj_beatriz)
     </footer>
   </div>
 
@@ -115,12 +115,15 @@
       if (event.key === "Enter") {
         const senha = event.target.value;
         if (senha === "12/09/24") {
+          // Ocultar a tela de bloqueio
           document.getElementById("lockScreen").style.display = "none";
+          
+          // Mostrar o conteúdo do site
           const content = document.getElementById("mainContent");
-          content.style.display = "block";
+          content.style.display = "block";  // Certifica que o conteúdo fica visível antes do fade
           setTimeout(() => {
-            content.classList.add("visible");
-          }, 10);
+            content.classList.add("visible");  // Adiciona a classe que ativa o fade
+          }, 10);  // Pequeno delay para garantir que o conteúdo foi mostrado primeiro
         } else {
           alert("Senha incorreta!");
         }
