@@ -1,119 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nosso Amor</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Tela de senha com blur -->
+  <!-- Tela de bloqueio -->
   <div class="lock-screen" id="lockScreen">
     <div class="lock-box">
       <div class="hint">data onde o nosso amor começou! ❤️💍</div>
-      <input type="password" id="passwordInput" placeholder="Digite a senha">
+      <input type="password" id="passwordInput" placeholder="Digite a senha" />
     </div>
   </div>
 
-  <!-- Conteúdo do site -->
-  <header>
-    <h1>Nosso Amor em Destaque</h1>
-  </header>
+  <!-- Conteúdo do site (inicialmente oculto) -->
+  <div id="mainContent" style="display: none;">
+    <header>
+      <h1>Nosso Amor em Destaque</h1>
+    </header>
 
-  <main class="content">
-    <section class="photo-gallery">
+    <main class="content">
+      <section class="photo-gallery">
 
-      <!-- Foto 1 -->
-      <div class="photo-item">
-        <img src="https://placekitten.com/400/300" alt="Foto 1">
-        <div class="description">
-          <h3>Amor Incondicional</h3>
-          <p>
-            Bem, desde que eu te conheci, foi tudo tão magnífico,  
-            nos brigamos e tudo, mas nada faz com que nosso amor acabe,  
-            você sabe que eu te amo muuuuiiiiiitoooooo,  
-            e eu nunca, nunca mesmo, nunquinha, nk vou te trair,  
-            pois você é tudo que eu quero e sempre quis,  
-            e é com você que eu irei casar.
-          </p>
+        <!-- Foto 1 -->
+        <div class="photo-item">
+          <img src="https://placekitten.com/400/300" alt="Foto 1" />
+          <div class="description">
+            <h3>Amor Incondicional</h3>
+            <p>
+              Bem, desde que eu te conheci, foi tudo tão magnífico,  
+              nos brigamos e tudo, mas nada faz com que nosso amor acabe,  
+              você sabe que eu te amo muuuuiiiiiitoooooo,  
+              e eu nunca, nunca mesmo, nunquinha, nk vou te trair,  
+              pois você é tudo que eu quero e sempre quis,  
+              e é com você que eu irei casar.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <!-- Foto 2 -->
-      <div class="photo-item">
-        <img src="https://placekitten.com/401/300" alt="Foto 2">
-        <div class="description">
-          <h3>Declaração</h3>
-          <p>
-            VOCÊ É A PESSOA MAIS IMPORTANTE PRA MIMMMMM  
-            NÃO ME TRAIA E NEM TERMINE COMIGO, PQ EU TE AMO PKRLLLL,  
-            VC É O AMOR DA MINHA VIDAAAA,  
-            MINHA GATINHA MANHOSAAAA
-          </p>
+        <!-- Foto 2 -->
+        <div class="photo-item">
+          <img src="https://placekitten.com/401/300" alt="Foto 2" />
+          <div class="description">
+            <h3>Declaração</h3>
+            <p>
+              VOCÊ É A PESSOA MAIS IMPORTANTE PRA MIMMMMM  
+              NÃO ME TRAIA E NEM TERMINE COMIGO, PQ EU TE AMO PKRLLLL,  
+              VC É O AMOR DA MINHA VIDAAAA,  
+              MINHA GATINHA MANHOSAAAA
+            </p>
+          </div>
         </div>
-      </div>
 
-      <!-- Foto 3 -->
-      <div class="photo-item">
-        <img src="https://placekitten.com/402/300" alt="Foto 3">
-        <div class="description">
-          <h3>Te Amar</h3>
-          <p>
-            EU TE AMO!  
-            sério, eu te amo muito,  
-            você é a pessoa que eu mais me importo,  
-            eu busco sempre fazer tudo que seja bom para nois 2  
-            ou que seja bom pelo menos pra você,  
-            pq eu te amo muito e nada vai mudar isso.  
-            Você às vezes é chata? sim.  
-            Às vezes você fica fazendo drama pkrl? sim.  
-            MAS NÃO DEIXA DE SER A MINHA VIDAAA
-          </p>
+        <!-- Foto 3 -->
+        <div class="photo-item">
+          <img src="https://placekitten.com/402/300" alt="Foto 3" />
+          <div class="description">
+            <h3>Te Amar</h3>
+            <p>
+              EU TE AMO!  
+              sério, eu te amo muito,  
+              você é a pessoa que eu mais me importo,  
+              eu busco sempre fazer tudo que seja bom para nois 2  
+              ou que seja bom pelo menos pra você,  
+              pq eu te amo muito e nada vai mudar isso.  
+              Você às vezes é chata? sim.  
+              Às vezes você fica fazendo drama pkrl? sim.  
+              MAS NÃO DEIXA DE SER A MINHA VIDAAA
+            </p>
+          </div>
         </div>
-      </div>
 
-      <!-- Foto 4 -->
-      <div class="photo-item">
-        <img src="https://placekitten.com/403/300" alt="Foto 4">
-        <div class="description">
-          <h3>Te ter</h3>
-          <p>
-            Como ter algo bom  
-            Em meio de coisas ruins  
-            Isso é algo que se contraria  
-            Pois, em meio ao mar de pessoas ruins  
-            Eu encontrei você, que é a melhor pessoa do mundo  
-            
-            Me apaixonei  
-            Me apeguei  
-            Me viciei  
-            Me encontrei, pois tu é a minha felicidade  
-            
-            Busquei por amor  
-            Busquei por felicidade  
-            Busquei por afeto  
-            Busquei a ti, que me proporcionou tudo isso e muito mais  
-            
-            Eu te amo!
-          </p>
+        <!-- Foto 4 -->
+        <div class="photo-item">
+          <img src="https://placekitten.com/403/300" alt="Foto 4" />
+          <div class="description">
+            <h3>Te ter</h3>
+            <p>
+              Como ter algo bom  
+              Em meio de coisas ruins  
+              Isso é algo que se contraria  
+              Pois, em meio ao mar de pessoas ruins  
+              Eu encontrei você, que é a melhor pessoa do mundo  
+              
+              Me apaixonei  
+              Me apeguei  
+              Me viciei  
+              Me encontrei, pois tu é a minha felicidade  
+              
+              Busquei por amor  
+              Busquei por felicidade  
+              Busquei por afeto  
+              Busquei a ti, que me proporcionou tudo isso e muito mais  
+              
+              Eu te amo!
+            </p>
+          </div>
         </div>
-      </div>
 
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer>
-    Feito com amor por você.
-  </footer>
+    <footer>
+      Feito com amor por você.
+    </footer>
+  </div>
 
-  <!-- Script para desbloquear -->
+  <!-- Script de senha -->
   <script>
     document.getElementById("passwordInput").addEventListener("keypress", function(event) {
       if (event.key === "Enter") {
         const senha = event.target.value;
         if (senha === "12/09/24") {
           document.getElementById("lockScreen").style.display = "none";
+          const content = document.getElementById("mainContent");
+          content.style.display = "block";
+          setTimeout(() => {
+            content.classList.add("visible");
+          }, 10);
         } else {
           alert("Senha incorreta!");
         }
