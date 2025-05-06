@@ -1,87 +1,125 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Blog Romântico</title>
-  <link href="style.css" rel="stylesheet"> <!-- Link para o arquivo externo -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso Amor</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Tela de bloqueio com senha -->
-  <div id="lockScreen" class="lock-screen">
+  <!-- Tela de senha com blur -->
+  <div class="lock-screen" id="lockScreen">
     <div class="lock-box">
-      <div class="hint">Dica: data onde o nosso amor começou! ❤️💍(exemplo **/**/**)</div>
-      <input type="password" id="password" placeholder="Digite a senha">
+      <div class="hint">data onde o nosso amor começou! ❤️💍</div>
+      <input type="password" id="passwordInput" placeholder="Digite a senha">
     </div>
   </div>
 
   <!-- Conteúdo do site -->
-  <div id="content" class="content" style="display: none;">
-    <header>
-      <h1>Nosso Cantinho Especial</h1>
-    </header>
+  <header>
+    <h1>Nosso Amor em Destaque</h1>
+  </header>
 
-    <div class="photo-gallery">
+  <main class="content">
+    <section class="photo-gallery">
+
       <!-- Foto 1 -->
       <div class="photo-item">
-        <img src="https://source.unsplash.com/500x300/?couple,romantic" alt="Imagem 1">
+        <img src="https://placekitten.com/400/300" alt="Foto 1">
         <div class="description">
-          <h3>Momento Inesquecível</h3>
-          <p>Bem, desde que eu te conheci, foi tudo tão magnífico, nos brigamos e tudo, mas nada faz com que nosso amor acabe, você sabe que eu te amo muuuuiiiiiitoooooo, e eu nunca, nunca mesmo, nunquinha, nk vou te trair, pois você é tudo que eu quero e sempre quis, e é com você que eu irei casar.</p>
+          <h3>Amor Incondicional</h3>
+          <p>
+            Bem, desde que eu te conheci, foi tudo tão magnífico,  
+            nos brigamos e tudo, mas nada faz com que nosso amor acabe,  
+            você sabe que eu te amo muuuuiiiiiitoooooo,  
+            e eu nunca, nunca mesmo, nunquinha, nk vou te trair,  
+            pois você é tudo que eu quero e sempre quis,  
+            e é com você que eu irei casar.
+          </p>
         </div>
       </div>
 
       <!-- Foto 2 -->
       <div class="photo-item">
-        <img src="https://source.unsplash.com/500x300/?love,photo" alt="Imagem 2">
+        <img src="https://placekitten.com/401/300" alt="Foto 2">
         <div class="description">
-          <h3>O Primeiro Encontro</h3>
-          <p>VOCÊ É A PESSOA MAIS IMPORTANTE PRA MIMMMMM 😭😭😭😭😭❤️❤️❤️❤️ NÃO ME TRAIA E NEM TERMINE COMIGO, PQ EU TE AMO PKRLLLL, VC É O AMOR DA MINHA VIDAAAA, MINHA GATINHA MANHOSAAAA 😭❤️🥺</p>
+          <h3>Declaração</h3>
+          <p>
+            VOCÊ É A PESSOA MAIS IMPORTANTE PRA MIMMMMM  
+            NÃO ME TRAIA E NEM TERMINE COMIGO, PQ EU TE AMO PKRLLLL,  
+            VC É O AMOR DA MINHA VIDAAAA,  
+            MINHA GATINHA MANHOSAAAA
+          </p>
         </div>
       </div>
 
       <!-- Foto 3 -->
       <div class="photo-item">
-        <img src="https://source.unsplash.com/500x300/?couple,travel" alt="Imagem 3">
+        <img src="https://placekitten.com/402/300" alt="Foto 3">
         <div class="description">
-          <h3>Eu Te Amo</h3>
-          <p>EU TE AMO! sério, eu te amo muito, você é a pessoa que eu mais me importo, eu busco sempre fazer tudo que seja bom para nois 2 ou que seja bom pelo menos pra você, pq eu te amo muito e nada vai mudar isso, você as vezes é chata? sim. As vezes você fica fazendo drama pkrl? sim. MAS NÃO DEIXA DE SER A MINHA VIDAAA 🥺❤️</p>
+          <h3>Te Amar</h3>
+          <p>
+            EU TE AMO!  
+            sério, eu te amo muito,  
+            você é a pessoa que eu mais me importo,  
+            eu busco sempre fazer tudo que seja bom para nois 2  
+            ou que seja bom pelo menos pra você,  
+            pq eu te amo muito e nada vai mudar isso.  
+            Você às vezes é chata? sim.  
+            Às vezes você fica fazendo drama pkrl? sim.  
+            MAS NÃO DEIXA DE SER A MINHA VIDAAA
+          </p>
         </div>
       </div>
 
       <!-- Foto 4 -->
       <div class="photo-item">
-        <img src="https://source.unsplash.com/500x300/?romantic,dinner" alt="Imagem 4">
+        <img src="https://placekitten.com/403/300" alt="Foto 4">
         <div class="description">
-          <h3>Te Ter</h3>
-          <p>Como ter algo bom <br>Em meio a coisas ruins?</p>
-          <p>Isso é algo que se contraria, <br>Pois, em meio ao mar de pessoas ruins, <br>Eu encontrei você, <br>Que é a melhor pessoa do mundo.</p>
-
-          <p>Me apaixonei, <br>Me apeguei, <br>Me viciei, <br>Me encontrei, <br>Pois tu és a minha felicidade.</p>
-
-          <p>Busquei por amor, <br>Busquei por felicidade, <br>Busquei por afeto, <br>Busquei a ti, <br>Que me proporcionou tudo isso e muito mais.</p>
-
-          <p><strong>Eu te amo!</strong></p>
+          <h3>Te ter</h3>
+          <p>
+            Como ter algo bom  
+            Em meio de coisas ruins  
+            Isso é algo que se contraria  
+            Pois, em meio ao mar de pessoas ruins  
+            Eu encontrei você, que é a melhor pessoa do mundo  
+            
+            Me apaixonei  
+            Me apeguei  
+            Me viciei  
+            Me encontrei, pois tu é a minha felicidade  
+            
+            Busquei por amor  
+            Busquei por felicidade  
+            Busquei por afeto  
+            Busquei a ti, que me proporcionou tudo isso e muito mais  
+            
+            Eu te amo!
+          </p>
         </div>
       </div>
-    </div>
-  </div>
+
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Nosso Cantinho Especial - Todos os direitos reservados</p>
+    Feito com amor por você.
   </footer>
 
+  <!-- Script para desbloquear -->
   <script>
-    // Função para verificar a senha e liberar o conteúdo
-    document.getElementById('password').addEventListener('input', function() {
-      const password = '12/09/24';
-      if (this.value === password) {
-        document.getElementById('lockScreen').style.display = 'none';
-        document.getElementById('content').style.display = 'block';
+    document.getElementById("passwordInput").addEventListener("keypress", function(event) {
+      if (event.key === "Enter") {
+        const senha = event.target.value;
+        if (senha === "12/09/24") {
+          document.getElementById("lockScreen").style.display = "none";
+        } else {
+          alert("Senha incorreta!");
+        }
       }
     });
   </script>
+
 </body>
 </html>
